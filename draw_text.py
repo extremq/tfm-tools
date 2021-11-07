@@ -39,10 +39,14 @@ for pt in pts:
         # offset for 1366 x 768
         if absolute_dif(pt[i], pt[i - 1]) > 6:
             pyautogui.mouseUp()
+            # 1080p offset
+            # pyautogui.moveTo(pt[i][0] + 750, pt[i][1] + 350, 0)
             pyautogui.moveTo(pt[i][0] + 500, pt[i][1] + 200, 0)
             time.sleep(0.20)
             pyautogui.mouseDown()
         else:
+            # 1080p offset
+            # pyautogui.moveTo(pt[i][0] + 750, pt[i][1] + 350, 0)
             pyautogui.moveTo(pt[i][0] + 500, pt[i][1] + 200, 0)
 
         if not started:
